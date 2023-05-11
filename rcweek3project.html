@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Competition 🏎</title>
+    <style>
+      body {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #120531;
+        font-size: x-large;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        padding: 15px;
+        border-radius: 5px;
+        font-size: large;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        color: #120531;
+      }
+      ul {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: inline;
+      }
+
+      button {
+        display: block;
+        margin: 10px auto;
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: #fff;
+        font-size: 20px;
+        padding: 15px 30px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: #fff;
+        color: #120531;
+        border: 2px solid #120531;
+        cursor: pointer;
+      }
+
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .italic {
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 18px;
+        color: #e40133;
+      }
+
+      .ticket {
+        display: block;
+        margin: 10px auto;
+        background: #120531;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+        padding: 10px;
+        max-width: 250px;
+        text-decoration: none;
+      }
+
+      .ticket:hover {
+        background: #fff;
+        color: #120531;
+        border: 1px solid #120531;
+        cursor: pointer;
+      }
+      .hospitality {
+        display: block;
+        margin: 10px auto;
+        background: #15069d;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+        padding: 10px;
+        max-width: 250px;
+        text-decoration: none;
+      }
+
+      .hospitality:hover {
+        background: #fff;
+        color: #15069d;
+        border: 1px solid #15069d;
+        cursor: pointer;
+      }
+      .hotel {
+        display: block;
+        margin: 10px auto;
+        background: #e40133;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+        padding: 10px;
+        max-width: 250px;
+        text-decoration: none;
+      }
+
+      .hotel:hover {
+        background: #fff;
+        color: #e40133;
+        border: 1px solid #e40133;
+        cursor: pointer;
+      }
+      .chopper {
+        display: block;
+        margin: 10px auto;
+        background: #120531;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+        padding: 10px;
+        max-width: 250px;
+        text-decoration: none;
+      }
+
+      .chopper:hover {
+        background: #fff;
+        color: #120531;
+        border: 1px solid #120531;
+        cursor: pointer;
+      }
+      .event-details {
+        display: block;
+        margin-top: 10px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        text-decoration: none;
+        color: #15069d;
+        text-align: center;
+      }
+      .event-details:hover {
+        text-decoration: underline;
+        color: #e40133;
+      }
+      .final-thought {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 18px;
+        color: #e40133;
+      }
+      .footer {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+        text-align: center;
+      }
+      .created-by {
+        color: #15069d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Formula 1 British Grand Prix Competition</h1>
+      <h2>
+        Win Tickets to Silverstone <br />
+        <em> 7th - 9th July 2023 </em>
+      </h2>
+
+      <a
+        href="https://www.silverstone.co.uk/events/formula-1-british-grand-prix"
+        target="_blank"
+        class="event-details"
+      >
+        🏎 British Grand Prix Homepage 🏎
+      </a>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/930/original/F1TN.jpeg?1679995230"
+        alt="f1car"
+      />
+      <p>
+        Get your <span class="italic">hands</span> on this summer's
+        <span class="italic">hottest</span> tickets and
+        <span class="italic">experience</span> the
+        <span class="italic">thrill</span> of the
+        <br />
+        <span class="italic">British Grand Prix in 2023!</span>
+      </p>
+      <p>
+        The British Grand Prix is bucket-list territory. World class sport and
+        an epic, weekend-long festival for over 400,000 fans. Don't miss this
+        opportunity to bag tickets to this iconic event.
+      </p>
+      <p>
+        By <span class="italic">entering </span> the
+        <span class="italic">competition </span> you have the chance of
+        <span class="italic">winning...</span>
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://www.silverstone.co.uk/events/formula-1-british-grand-prix/tickets/exclusive-enclosures"
+            target="_blank"
+            class="ticket"
+          >
+            <strong> Tickets </strong> for the full weekend
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://hospitality.silverstone.co.uk/en/home/"
+            target="_blank"
+            class="hospitality"
+            >Access to <strong>hospitality</strong> packages
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://hospitality.silverstone.co.uk/en/accommodation/buy-packages/?utm_source=Silverstone&utm_medium=Website&utm_campaign=silverstoneaccommodation&utm_id=Accommodation&utm_content=go%20to%20the%20website"
+            target="_blank"
+            class="hotel"
+            ><strong>Accomodation</strong> at a nearly luxury hotel
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.silverstone.co.uk/visit-stay/getting-here/helicopter"
+            target="_blank"
+            class="chopper"
+            ><strong>Helicopter</strong> arrival on Grand Prix day
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/931/original/Silverstone-f1-master-2023.png?1679995382"
+        alt="circuit"
+      />
+      <hr />
+
+      <button>Enter Now!</button>
+      <br />
+
+      <div class="final-thought">
+        Don't miss out on this opportunity - Go on, what are you waiting for?
+      </div>
+
+      <br />
+      <p class="footer">
+        👩🏻‍💻 This page was built by
+        <a
+          href="www.linkedin.com/in/rosie-carr-thompson"
+          target="_blank"
+          class="created-by"
+        >
+          <strong>Rosie Carr</strong>
+        </a>
+      </p>
+    </div>
+    <script>
+      function applyNow() {
+        let firstName = prompt("What is your first name?");
+        let email = prompt("How can we contact you? e-mail or mobile number");
+        let age = prompt("How old are you?");
+
+        let accept = `🥳 Hi ${firstName}! We have received your entry. If you are successful we will contact you at ${email}.  GOOD LUCK 🥳`;
+        let decline = `😥 Sorry ${firstName}, you need to be over 18 to apply 😥`;
+
+        if (age >= 18) {
+          alert(accept);
+        } else {
+          alert(decline);
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyNow);
+    </script>
+  </body>
+</html>
